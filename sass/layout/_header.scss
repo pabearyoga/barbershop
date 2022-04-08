@@ -1,0 +1,25 @@
+.header {
+    background-color: teal;
+}
+
+.menu {
+    display: none;
+}
+
+.menu__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
