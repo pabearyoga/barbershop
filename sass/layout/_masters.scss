@@ -1,0 +1,37 @@
+.masters__title {
+    margin-bottom: 44px;
+}
+
+.masters__item {
+    &:not(:last-child) {
+        margin-bottom: 64px;
+    }
+}
+
+.masters__content {
+    padding-top: 30px;
+}
+
+.masters__name {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #303030;
+}
+
+.masters__profession {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #ff6c00;
+}
