@@ -20,33 +20,66 @@
   </head>
 
   <body class="body">
-    <header class="header">
-      <div class="container">
+    <header class="header header--padding">
+      <div class="container header__container">
         <nav class="nav">
-          <a href="">
+          <a href="./index.html">
             <img class="logo" src="./images/Logo.svg" alt="logo" />
           </a>
 
-          <button class="menu__btn" type="button">
-            <!-- <svg class="menu__icon" width="40px" height="40px">
-            <use class="menu__icon-open" href="./images/menu_open.svg"></use>
-          </svg> -->
+          <button
+            class="menu__btn is-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            data-menu-button
+          >
+            <svg
+              class="menu__icon"
+              width="40px"
+              height="40px"
+              aria-label="переключатель мобильного меню"
+            >
+              <use
+                class="menu__icon-open"
+                href="./images/sprite.svg#icon-menu-open"
+              ></use>
+              <use
+                class="menu__icon-close"
+                href="./images/sprite.svg#icon-menu-close"
+              ></use>
+            </svg>
           </button>
 
-          <div class="menu">
-            <ul class="menu__list">
-              <li class="menu__item"><a href="">О нас</a></li>
-              <li class="menu__item"><a href="">Услуги и цены</a></li>
-              <li class="menu__item"><a href="">Мастера</a></li>
-              <li class="menu__item"><a href="">Контакты</a></li>
-            </ul>
-
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
-
-            <ul class="links__list">
-              <li class="links__item"><a href="">Instagram</a></li>
-              <li class="links__item"><a href="">Youtube</a></li>
-            </ul>
+          <div class="main-menu" id="main-menu" data-menu>
+            <div class="menu-wrapper">
+              <ul class="menu menu--margin">
+                <li class="menu__item menu__item--margin">
+                  <a class="menu__link" href="">О нас</a>
+                </li>
+                <li class="menu__item menu__item--margin">
+                  <a class="menu__link" href="">Услуги и цены</a>
+                </li>
+                <li class="menu__item menu__item--margin">
+                  <a class="menu__link" href="">Мастера</a>
+                </li>
+                <li class="menu__item menu__item--margin">
+                  <a class="menu__link" href="">Контакты</a>
+                </li>
+              </ul>
+              <a class="tel-link tel-link--margin" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <a class="btn main-menu__btn" href="">онлайн-запись</a>
+              <ul class="links links--margin">
+                <li class="links__item links__item--margin">
+                  <a class="links__link" href="">Instagram</a>
+                </li>
+                <li class="links__item links__item--margin">
+                  <a class="links__link" href="">Youtube</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -95,23 +128,37 @@
           <h2 class="title title--ligth">Услуги и цены</h2>
 
           <ul class="price">
-            <li class="price__item">Мужская стрижка<span>от 300 грн.</span></li>
-            <li class="price__item">Стрижка бороды<span>от 200 грн.</span></li>
-            <li class="price__item">Стрижка усов<span>от 200 грн.</span></li>
             <li class="price__item">
-              Бритье опасной бритвой<span>от 200 грн.</span>
+              <span class="price__name">Мужская стрижка</span
+              ><span class="price__value">от 300 грн.</span>
             </li>
             <li class="price__item">
-              Cтрижка у стажера<span>от 50 грн.</span>
+              <span class="price__name">Стрижка бороды</span
+              ><span class="price__value">от 200 грн.</span>
             </li>
             <li class="price__item">
-              Стрижка под насадку<span>от 200 грн.</span>
+              <span class="price__name">Стрижка усов</span
+              ><span class="price__value">от 200 грн.</span>
             </li>
             <li class="price__item">
-              Детская стрижка (до 12 лет)<span>от 300 грн.</span>
+              <span class="price__name">Бритье опасной бритвой</span
+              ><span class="price__value">от 200 грн.</span>
             </li>
             <li class="price__item">
-              Камуфлирование седины<span>от 200 грн.</span>
+              <span class="price__name">Cтрижка у стажера</span
+              ><span class="price__value">от 50 грн.</span>
+            </li>
+            <li class="price__item">
+              <span class="price__name">Стрижка под насадку</span
+              ><span class="price__value">от 200 грн.</span>
+            </li>
+            <li class="price__item">
+              Детская стрижка (до 12 лет)<span class="price__value"
+                >от 300 грн.</span
+              >
+            </li>
+            <li class="price__item">
+              Камуфлирование седины<span class="price__value">от 200 грн.</span>
             </li>
           </ul>
           <a class="btn btn--light price__btn" href="">онлайн-запись</a>
@@ -264,5 +311,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

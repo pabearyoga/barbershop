@@ -19,6 +19,8 @@
 }
 
 .uppertitle {
+    display: flex;
+    align-items: center;
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
@@ -32,12 +34,31 @@
 
     text-align: left;
 
+    &::before {
+        display: block;
+        margin-right: 20px;
+        top: 7px;
+        left: -80px;
+        content: "";
+        width: 60px;
+        height: 1px;
+        background-color: #303030;
+    }
+
     &--grey {
         color: rgba(157, 164, 189, 0.6);
+
+        &::before {
+            background-color: rgba(157, 164, 189, 0.6);
+        }
     }
 
     &--light {
         color: #ffffff;
+
+        &::before {
+            background-color: #fff;
+        }
     }
 }
 
