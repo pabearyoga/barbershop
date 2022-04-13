@@ -356,6 +356,62 @@ a {
   color: #ffffff;
 }
 
+.price {
+  margin-bottom: 50px;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.price__item::after {
+  margin: 0 6px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.price__name {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.price__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.price__btn {
+  text-align: center;
+}
+
 .masters__title {
   margin-bottom: 44px;
 }
