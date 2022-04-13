@@ -30,10 +30,7 @@
 }
 
 .main-menu__btn {
-    display: block;
-    width: 194px;
-    margin-bottom: 76px;
-    text-align: center;
+    padding: 12px 37px;
 }
 
 .menu-wrapper {
@@ -44,7 +41,7 @@
     padding-top: 118px;
     padding-bottom: 227px;
     padding-left: 40px;
-    padding-right: 105px;
+    // padding-right: 40px;
     background-color: #fff;
 }
 
@@ -67,6 +64,10 @@
     letter-spacing: 0.1em;
 
     color: #303030;
+}
+
+.connection {
+    margin-bottom: 76px;
 }
 
 .tel-link {
