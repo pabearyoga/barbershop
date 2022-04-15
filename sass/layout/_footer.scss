@@ -1,23 +1,32 @@
+.footer {
+    padding: 44px 0;
+}
+
 .links__wrapper-footer {
     justify-content: flex-end;
 }
 
 .footer__links {
-    display: inline;
+    display: flex;
+    flex-direction: row;
 }
 
 .links__item--footer {
     display: inline;
-    margin-right: 40px;
 
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
 
     letter-spacing: 0.2em;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
 }
 
 .copyright {
+    margin-top: 20px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
