@@ -1,0 +1,27 @@
+.links__wrapper-footer {
+    justify-content: flex-end;
+}
+
+.footer__links {
+    display: inline;
+}
+
+.links__item--footer {
+    display: inline;
+    margin-right: 40px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    letter-spacing: 0.2em;
+}
+
+.copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: #9da4bd;
+}

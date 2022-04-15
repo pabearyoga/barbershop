@@ -71,7 +71,9 @@
                 <a class="tel-link tel-link--margin" href="tel:+380441111111"
                   >+38 044 111 11 11</a
                 >
-                <a class="btn main-menu__btn" href="">онлайн-запись</a>
+                <a class="btn main-menu__btn" href="./index.html#form" target=""
+                  >онлайн-запись</a
+                >
               </div>
               <div class="links__wrapper">
                 <ul class="links links--margin">
@@ -120,7 +122,7 @@
             усовершенствовать каждого, кто к нам приходит!
           </p>
 
-          <a class="btn" href="">онлайн-запись</a>
+          <a class="btn" href="#form">онлайн-запись</a>
         </div>
       </section>
       <!-- price -->
@@ -165,7 +167,7 @@
               ><span class="price__value">от 200 грн.</span>
             </li>
           </ul>
-          <a class="btn btn--light price__btn" href="">онлайн-запись</a>
+          <a class="btn btn--light price__btn" href="#form">онлайн-запись</a>
         </div>
       </section>
       <!-- benefits -->
@@ -271,11 +273,41 @@
         </div>
       </section>
       <!-- form -->
-      <section class="section section--bgc-dark section--center">
+      <section id="form" class="section section--bgc-dark section--center">
         <div class="container">
-          <h2 class="title title--ligth">Онлайн-запись</h2>
-          <div class="form__input"></div>
-          <button class="btn btn--light">отправить</button>
+          <h2 class="title title--ligth title__form">Онлайн-запись</h2>
+          <form class="form" autocomplete="off">
+            <label class="field" for="">
+              <input
+                class="field__input"
+                type="text"
+                name="username"
+                placeholder=" "
+              />
+              <span class="field__text">Имя*</span>
+            </label>
+
+            <label class="field" for="">
+              <input
+                class="field__input"
+                type="tel"
+                name="tel"
+                placeholder=" "
+              />
+              <span class="field__text">Телефон*</span>
+            </label>
+
+            <label class="field" for="">
+              <textarea
+                class="field__textarea"
+                rows="5"
+                placeholder=" "
+              ></textarea>
+              <span class="field__text">сообщение</span>
+            </label>
+
+            <button class="btn btn--light" type="submit">отправить</button>
+          </form>
         </div>
       </section>
       <!-- contacts -->
@@ -308,12 +340,18 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="uppertitle uppertitle--grey">&#169; Copyright 2020</p>
-        <ul class="footer__list">
-          <li class="footer__item">Instagram</li>
-          <li class="footer__item">Youtube</li>
-        </ul>
+        <div class="links__wrapper links__wrapper-footer">
+          <ul class="links footer__links">
+            <li class="links__item links__item--footer">
+              <a class="links__link" href="">Instagram</a>
+            </li>
+            <li class="links__item links__item--footer">
+              <a class="links__link" href="">Youtube</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <p class="copyright">&#169; Copyright 2020</p>
     </footer>
     <script src="./js/menu.js"></script>
   </body>
