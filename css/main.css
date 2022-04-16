@@ -10,6 +10,14 @@
   }
 }
 
+.body.modal-open {
+  overflow: hidden;
+}
+
+.main-menu.is-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -28,6 +36,7 @@ a {
 }
 
 .btn {
+  display: inline-block;
   padding: 12px 20px;
   font-weight: 600;
   font-size: 12px;
@@ -462,10 +471,45 @@ a {
   padding: 208px 0 183px;
   width: 100%;
   height: 580px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(/images/Slider-img-1.jpg);
-  background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(/images/Slider-img-1.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(84, 87, 95, 0.2)), to(rgba(25, 28, 38, 0.2))), url(/images/mobile/hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(84, 87, 95, 0.2), rgba(25, 28, 38, 0.2)), url(/images/mobile/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(84, 87, 95, 0.2)), to(rgba(84, 87, 95, 0.2))), url(../images/mobile/hero-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(84, 87, 95, 0.2), rgba(84, 87, 95, 0.2)), url(../images/mobile/hero-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(84, 87, 95, 0.2)), to(rgba(84, 87, 95, 0.2))), url(../images/tablet/hero-bg.jpg);
+    background-image: linear-gradient(to right, rgba(84, 87, 95, 0.2), rgba(84, 87, 95, 0.2)), url(../images/tablet/hero-bg.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(84, 87, 95, 0.2)), to(rgba(84, 87, 95, 0.2))), url(../images/tablet/hero-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(84, 87, 95, 0.2), rgba(84, 87, 95, 0.2)), url(../images/tablet/hero-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(84, 87, 95, 0.2)), to(rgba(84, 87, 95, 0.2))), url(../images/desktop/hero-bg.jpg);
+    background-image: linear-gradient(to right, rgba(84, 87, 95, 0.2), rgba(84, 87, 95, 0.2)), url(../images/desktop/hero-bg.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(84, 87, 95, 0.2)), to(rgba(84, 87, 95, 0.2))), url(../images/desktop/hero-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(84, 87, 95, 0.2), rgba(84, 87, 95, 0.2)), url(../images/desktop/hero-bg@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -480,6 +524,53 @@ a {
 }
 
 .price {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(/images/mobile/price-bg.jpg);
+  background: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(/images/mobile/price-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../images/mobile/price-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../images/mobile/price-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../images/tablet/price-bg.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../images/tablet/price-bg.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../images/tablet/price-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../images/tablet/price-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../images/desktop/price-bg.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../images/desktop/price-bg.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../images/desktop/price-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../images/desktop/price-bg@2x.jpg);
+  }
+}
+
+.price__title {
+  margin-bottom: 44px;
+}
+
+.price__list {
   margin-bottom: 50px;
   padding: 30px;
   font-weight: 400;
@@ -498,6 +589,10 @@ a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.price__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .price__item::after {
@@ -819,5 +914,9 @@ a {
 
 .contacts__icon {
   margin-right: 16px;
+}
+
+.portfolio__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */

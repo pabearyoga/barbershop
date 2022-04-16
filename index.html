@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body class="body">
+  <body class="body" data-modal>
     <header class="header header--padding">
       <div class="container header__container">
         <nav class="nav">
@@ -33,6 +33,7 @@
             aria-expanded="false"
             aria-controls="main-menu"
             data-menu-button
+            data-modal-open
           >
             <svg
               class="menu__icon"
@@ -106,7 +107,7 @@
         </div>
       </section>
       <!-- about -->
-      <section class="section">
+      <section class="section about">
         <div class="container">
           <p class="uppertitle">О НАС</p>
           <h2 class="title title--size-s">Лучший Барбершоп твоего города</h2>
@@ -126,14 +127,14 @@
         </div>
       </section>
       <!-- price -->
-      <section class="section section--bgc section--center">
+      <section class="section price">
         <div class="container">
           <p class="uppertitle uppertitle--grey">
             Проведи время в компании лучших мастеров
           </p>
-          <h2 class="title title--ligth">Услуги и цены</h2>
+          <h2 class="title title--ligth price__title">Услуги и цены</h2>
 
-          <ul class="price">
+          <ul class="price__list">
             <li class="price__item">
               <span class="price__name">Мужская стрижка</span
               ><span class="price__value">от 300 грн.</span>
@@ -171,7 +172,7 @@
         </div>
       </section>
       <!-- benefits -->
-      <section class="section">
+      <section class="section benefits">
         <div class="container">
           <p class="uppertitle">старая традиционная школа</p>
           <h2 class="title">Почему приходят именно к нам?</h2>
@@ -211,7 +212,19 @@
 
           <ul class="masters">
             <li class="masters__item">
-              <img src="" alt="" height="346px" />
+              <img
+                srcset="
+                  ./images/mobile/master-1.jpg     418w,
+                  ./images/mobile/master-1@2x.jpg  836w,
+                  ./images/tablet/master-1.jpg     450w,
+                  ./images/tablet/master-1@2x.jpg  900w,
+                  ./images/desktop/master-1.jpg    370w,
+                  ./images/desktop/master-1@2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (max-width: 480px) 418px, 100vw"
+                src="./images/mobile/master-1.jpg"
+                alt=""
+              />
               <div class="masters__content">
                 <p class="masters__name">John Smith</p>
                 <p class="masters__profession">Extreme Barber</p>
@@ -264,7 +277,19 @@
               </div>
             </li>
             <li class="masters__item">
-              <img src="" alt="" height="346px" />
+              <img
+                srcset="
+                  ./images/mobile/master-2.jpg     418w,
+                  ./images/mobile/master-2@2x.jpg  836w,
+                  ./images/tablet/master-2.jpg     450w,
+                  ./images/tablet/master-2@2x.jpg  900w,
+                  ./images/desktop/master-2.jpg    370w,
+                  ./images/desktop/master-2@2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (max-width: 480px) 418px, 100vw"
+                src="./images/mobile/master-2.jpg"
+                alt=""
+              />
               <div class="masters__content">
                 <p class="masters__name">Michele Doe</p>
                 <p class="masters__profession">Extreme Barber</p>
@@ -317,7 +342,19 @@
               </div>
             </li>
             <li class="masters__item">
-              <img src="" alt="" height="346px" />
+              <img
+                srcset="
+                  ./images/mobile/master-3.jpg     418w,
+                  ./images/mobile/master-3@2x.jpg  836w,
+                  ./images/tablet/master-3.jpg     450w,
+                  ./images/tablet/master-3@2x.jpg  900w,
+                  ./images/desktop/master-3.jpg    370w,
+                  ./images/desktop/master-3@2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (max-width: 480px) 418px, 100vw"
+                src="./images/mobile/master-3.jpg"
+                alt=""
+              />
               <div class="masters__content">
                 <p class="masters__name">Alan Black</p>
                 <p class="masters__profession">Extreme Barber</p>
@@ -378,16 +415,64 @@
           <p class="uppertitle">На латинском языке “барба” означает “борода”</p>
           <ul class="portfolio__list">
             <li class="portfolio__item">
-              <img src="" alt="" height="360px" />
+              <img
+                srcset="
+                  ./images/mobile/portfolio-1.jpg     418w,
+                  ./images/mobile/portfolio-1@2x.jpg  836w,
+                  ./images/tablet/portfolio-1.jpg     330w,
+                  ./images/tablet/portfolio-1@2x.jpg  660w,
+                  ./images/desktop/portfolio-1.jpg    270w,
+                  ./images/desktop/portfolio-1@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (max-width: 480px) 418px, 100vw"
+                src="./images/mobile/portfolio-1.jpg"
+                alt=""
+              />
             </li>
             <li class="portfolio__item">
-              <img src="" alt="" height="360px" />
+              <img
+                srcset="
+                  ./images/mobile/portfolio-2.jpg     418w,
+                  ./images/mobile/portfolio-2@2x.jpg  836w,
+                  ./images/tablet/portfolio-2.jpg     330w,
+                  ./images/tablet/portfolio-2@2x.jpg  660w,
+                  ./images/desktop/portfolio-2.jpg    270w,
+                  ./images/desktop/portfolio-2@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (max-width: 480px) 418px, 100vw"
+                src="./images/mobile/portfolio-2.jpg"
+                alt=""
+              />
             </li>
             <li class="portfolio__item">
-              <img src="" alt="" height="360px" />
+              <img
+                srcset="
+                  ./images/mobile/portfolio-3.jpg     418w,
+                  ./images/mobile/portfolio-3@2x.jpg  836w,
+                  ./images/tablet/portfolio-3.jpg     330w,
+                  ./images/tablet/portfolio-3@2x.jpg  660w,
+                  ./images/desktop/portfolio-3.jpg    270w,
+                  ./images/desktop/portfolio-3@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (max-width: 480px) 418px, 100vw"
+                src="./images/mobile/portfolio-3.jpg"
+                alt=""
+              />
             </li>
             <li class="portfolio__item">
-              <img src="" alt="" height="360px" />
+              <img
+                srcset="
+                  ./images/mobile/portfolio-4.jpg     418w,
+                  ./images/mobile/portfolio-4@2x.jpg  836w,
+                  ./images/tablet/portfolio-4.jpg     330w,
+                  ./images/tablet/portfolio-4@2x.jpg  660w,
+                  ./images/desktop/portfolio-4.jpg    270w,
+                  ./images/desktop/portfolio-4@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (max-width: 480px) 418px, 100vw"
+                src="./images/mobile/portfolio-4.jpg"
+                alt=""
+              />
             </li>
           </ul>
         </div>
@@ -487,5 +572,6 @@
       </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

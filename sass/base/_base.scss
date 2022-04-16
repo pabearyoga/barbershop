@@ -6,6 +6,14 @@
     @media screen and (min-width: 320px) {
         overflow-x: hidden;
     }
+
+    &.modal-open {
+        overflow: hidden;
+    }
+}
+
+.main-menu.is-open {
+    overflow: hidden;
 }
 
 img {
