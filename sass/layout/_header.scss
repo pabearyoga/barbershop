@@ -65,6 +65,12 @@
     letter-spacing: 0.1em;
 
     color: #303030;
+    @include transition-base(color);
+
+    &:hover,
+    &:focus {
+        color: #ff6c00;
+    }
 }
 
 .connection {
@@ -112,12 +118,6 @@
     }
 }
 
-.nav {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-}
-
 .links__wrapper {
     display: inline-flex;
     width: 100%;
@@ -150,4 +150,11 @@
     line-height: 1.35;
     letter-spacing: 0.2em;
     color: #303030;
+
+    @include transition-base(color);
+
+    &:hover,
+    &:focus {
+        color: #ff6c00;
+    }
 }

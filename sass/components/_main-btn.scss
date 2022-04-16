@@ -14,7 +14,15 @@
 
     background-color: transparent;
 
+    @include transition-base(background-color, color);
+
     &--light {
+        color: #fff;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #ff6c00;
         color: #fff;
     }
 }

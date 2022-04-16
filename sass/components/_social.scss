@@ -1,0 +1,40 @@
+.social {
+    display: flex;
+    justify-content: center;
+
+    &--margin-top {
+        margin-top: 16px;
+    }
+}
+
+.social__item--margin-right:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+    @include transition-base(fill, background-color);
+
+    &--bgc {
+        background-color: #fff;
+    }
+}
+
+.social__icon {
+    width: 20px;
+    height: 20px;
+    fill: #303030;
+    @include transition-base(fill);
+
+    .social__link:hover &,
+    .social__link:focus & {
+        fill: #ff6c00;
+    }
+}
