@@ -459,6 +459,7 @@ a {
 }
 
 .copyright {
+  margin: 0;
   margin-top: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -572,7 +573,7 @@ a {
 
 .price__list {
   margin-bottom: 50px;
-  padding: 30px;
+  padding: 50px;
   font-weight: 400;
   font-size: 14px;
   line-height: 2.14;
@@ -632,8 +633,11 @@ a {
   text-align: center;
 }
 
-.benefits {
-  margin-top: 44px;
+.benefits__subtitle {
+  margin-bottom: 44px;
+}
+
+.benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,8 +916,19 @@ a {
   color: #fff;
 }
 
+.contacts__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+}
+
 .contacts__icon {
   margin-right: 16px;
+}
+
+.portfolio__uppertitle {
+  margin-bottom: 44px;
 }
 
 .portfolio__item:not(:last-child) {
