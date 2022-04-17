@@ -1,10 +1,31 @@
+.masters {
+    background: #f7f7f7;
+}
+
+.masters__container {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        padding: 0 159px;
+    }
+}
+
 .masters__title {
     margin-bottom: 44px;
+}
+
+.masters__list {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+    }
 }
 
 .masters__item {
     &:not(:last-child) {
         margin-bottom: 64px;
+
+        @media screen and (min-width: 1280px) {
+            margin: 0;
+            margin-right: 30px;
+        }
     }
 }
 

@@ -2,8 +2,33 @@
     margin-bottom: 44px;
 }
 
+.portfolio__list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .portfolio__item {
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (max-width: $tablet - 1px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 }
