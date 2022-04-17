@@ -2,10 +2,6 @@
     padding: 44px 0;
 }
 
-.links__wrapper-footer {
-    justify-content: flex-end;
-}
-
 .footer__links {
     display: flex;
     flex-direction: row;
@@ -27,7 +23,6 @@
 
 .copyright {
     margin: 0;
-    margin-top: 20px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
