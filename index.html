@@ -519,85 +519,90 @@
           </ul>
         </div>
       </section>
-      <!-- form -->
-      <section id="form" class="section record">
-        <div class="container">
-          <h2 class="title title--ligth title__form">Онлайн-запись</h2>
-          <form class="form" autocomplete="off">
-            <label class="field" for="">
-              <input
-                class="field__input"
-                type="text"
-                name="username"
-                placeholder=" "
-              />
-              <span class="field__text">Имя*</span>
-            </label>
-
-            <label class="field" for="">
-              <input
-                class="field__input"
-                type="tel"
-                name="tel"
-                placeholder=" "
-              />
-              <span class="field__text">Телефон*</span>
-            </label>
-
-            <label class="field" for="">
-              <textarea
-                class="field__textarea"
-                rows="5"
-                placeholder=" "
-              ></textarea>
-              <span class="field__text">сообщение</span>
-            </label>
-
-            <button class="btn btn--light" type="submit">отправить</button>
-          </form>
-        </div>
-      </section>
-      <!-- contacts -->
-      <section class="section contacts">
-        <div class="container">
-          <h2 class="title contacts__title title--ligth title--center">
-            Контакты
-          </h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link" href="">
-                <svg class="contacts__icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-map-pin"></use>
-                </svg>
-                ул. Васильковая, 7А, Киев, 08132</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="tel:+380441111111">
-                <svg class="contacts__icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 044 111 11 11</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="mailto:barbershop@email.com">
-                <svg class="contacts__icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                <span class="contacts__text">barbershop@email.com</span></a
-              >
-            </li>
-          </ul>
-
-          <p class="uppertitle uppertitle--grey contacts__uppertitle">
-            время работы
-          </p>
-          <h3 class="subtitle subtitle--grey contacts__subtitle">
-            Ежедневно с 9:00 до 22:00
-          </h3>
-        </div>
-      </section>
+      <!-- unifying-wrapper -->
+      <div class="unifying-wrapper">
+        <!-- form -->
+        <section id="form" class="section record">
+          <div class="container record__container">
+            <h2 class="title title--ligth form__title">Онлайн-запись</h2>
+            <form class="form" autocomplete="off">
+              <div class="field-wrapper">
+                <label class="field" for="">
+                  <input
+                    class="field__input"
+                    type="text"
+                    name="username"
+                    placeholder=" "
+                  />
+                  <span class="field__text">Имя*</span>
+                </label>
+                <label class="field" for="">
+                  <input
+                    class="field__input"
+                    type="tel"
+                    name="tel"
+                    placeholder=" "
+                  />
+                  <span class="field__text">Телефон*</span>
+                </label>
+              </div>
+              <label class="field" for="">
+                <textarea
+                  class="field__textarea"
+                  rows="5"
+                  placeholder=" "
+                ></textarea>
+                <span class="field__text">сообщение</span>
+              </label>
+              <button class="btn btn--light form__btn" type="submit">
+                отправить
+              </button>
+            </form>
+          </div>
+        </section>
+        <!-- contacts -->
+        <section class="section contacts">
+          <div class="container contacts__container">
+            <h2 class="title contacts__title title--ligth">Контакты</h2>
+            <div class="contacts-wrapper">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link" href="">
+                    <svg class="contacts__icon" width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    ул. Васильковая, 7А, Киев, 08132</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="tel:+380441111111">
+                    <svg class="contacts__icon" width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a class="contacts__link" href="mailto:barbershop@email.com">
+                    <svg class="contacts__icon" width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    <span class="contacts__text">barbershop@email.com</span></a
+                  >
+                </li>
+              </ul>
+              <div class="working-hours">
+                <p class="uppertitle uppertitle--grey contacts__uppertitle">
+                  время работы
+                </p>
+                <h3 class="subtitle subtitle--grey contacts__subtitle">
+                  Ежедневно с 9:00 до 22:00
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">

@@ -1,6 +1,34 @@
 .record {
-    text-align: center;
     background: #191c26;
+
+    @media screen and (max-width: $tablet - 1px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: 50%;
+    }
+}
+
+.record__container {
+    @media screen and (min-width: $desktop) {
+        width: calc(1280px / 2);
+        margin: 0;
+    }
+}
+
+.form__title {
+    margin-bottom: 44px;
+
+    @media screen and (max-width: $tablet - 1px) {
+        text-align: center;
+    }
+}
+
+.field-wrapper {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
 }
 
 .field {
@@ -9,6 +37,18 @@
     flex-direction: column;
 
     margin-bottom: 44px;
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: 50%;
+
+        &:first-child {
+            margin-right: 15px;
+        }
+
+        &:first-child + & {
+            margin-left: 15px;
+        }
+    }
 }
 
 .field__input {
@@ -95,6 +135,6 @@
     transform: translateY(-20px);
 }
 
-.btn[type="submit"] {
+.form__btn {
     cursor: pointer;
 }
