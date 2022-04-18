@@ -148,8 +148,8 @@ a {
   padding: 0;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
   text-align: left;
@@ -157,11 +157,6 @@ a {
 
 .title--ligth {
   color: #fff;
-}
-
-.title--size-s {
-  font-size: 28px;
-  line-height: 1.17;
 }
 
 .title--center {
@@ -513,6 +508,86 @@ a {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.about__list {
+  margin-right: 15px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .about__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 32px;
+    max-width: 570px;
+  }
+}
+
+.about__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media screen and (max-width: 1279px) {
+  .about__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.about-content {
+  margin-left: 15px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-content {
+    max-width: 500px;
+    margin-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__title {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__subtitle {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__text {
+    padding-right: 20px;
+  }
 }
 
 .price {

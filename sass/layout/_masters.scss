@@ -3,7 +3,7 @@
 }
 
 .masters__container {
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @media screen and (min-width: 768px) and (max-width: $desktop - 1px) {
         padding: 0 159px;
     }
 }
@@ -13,7 +13,7 @@
 }
 
 .masters__list {
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
         display: flex;
     }
 }
@@ -22,7 +22,7 @@
     &:not(:last-child) {
         margin-bottom: 64px;
 
-        @media screen and (min-width: 1280px) {
+        @media screen and (min-width: $desktop) {
             margin: 0;
             margin-right: 30px;
         }
