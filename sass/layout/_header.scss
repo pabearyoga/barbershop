@@ -20,6 +20,16 @@
     }
 }
 
+.header--logo {
+    @media screen and (min-width: $tablet) {
+        margin-right: 64px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 71px;
+    }
+}
+
 .main-menu {
     @media screen and (max-width: $tablet - 1px) {
         position: fixed;
@@ -44,6 +54,7 @@
 
     @media screen and (min-width: $tablet) {
         color: #ffffff;
+        padding: 12px 20px;
     }
 }
 
@@ -63,7 +74,6 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
     }
 }
@@ -86,7 +96,7 @@
 
     @media screen and (min-width: $desktop) {
         &--margin {
-            margin-right: 322px;
+            margin-right: 315px;
         }
     }
 }

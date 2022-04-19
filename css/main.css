@@ -277,6 +277,18 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header--logo {
+    margin-right: 64px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header--logo {
+    margin-right: 71px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .main-menu {
     position: fixed;
@@ -302,6 +314,7 @@ a {
 @media screen and (min-width: 768px) {
   .main-menu__btn {
     color: #ffffff;
+    padding: 12px 20px;
   }
 }
 
@@ -328,9 +341,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -359,7 +369,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .menu--margin {
-    margin-right: 322px;
+    margin-right: 315px;
   }
 }
 
@@ -720,7 +730,7 @@ a {
 
 @media screen and (min-width: 1280px) {
   .hero__content {
-    margin-left: 160px;
+    margin-left: 195px;
   }
 }
 
