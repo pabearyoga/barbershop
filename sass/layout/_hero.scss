@@ -46,6 +46,10 @@
     color: #ffffff;
 }
 
+.hero__span {
+    display: inline-block;
+}
+
 .hero__content {
     @media screen and (min-width: $tablet) {
         max-width: 355px;
