@@ -56,16 +56,20 @@
             <div class="menu-wrapper">
               <ul class="menu menu--margin">
                 <li class="menu__item menu__item--margin">
-                  <a class="menu__link" href="">О нас</a>
+                  <a class="menu__link" href="#about"
+                  aria-expanded="true"
+                  aria-controls="main-menu"
+                  data-menu-button
+                  data-modal-open="">О нас</a>
                 </li>
                 <li class="menu__item menu__item--margin">
-                  <a class="menu__link" href="">Услуги и цены</a>
+                  <a class="menu__link" href="#price">Услуги и цены</a>
                 </li>
                 <li class="menu__item menu__item--margin">
-                  <a class="menu__link" href="">Мастера</a>
+                  <a class="menu__link" href="#masters">Мастера</a>
                 </li>
                 <li class="menu__item menu__item--margin">
-                  <a class="menu__link" href="">Контакты</a>
+                  <a class="menu__link" href="#contacts">Контакты</a>
                 </li>
               </ul>
               <div class="connection">
@@ -79,10 +83,10 @@
               <div class="links__wrapper">
                 <ul class="links links--margin">
                   <li class="links__item links__item--margin">
-                    <a class="links__link" href="">Instagram</a>
+                    <a class="links__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a>
                   </li>
                   <li class="links__item links__item--margin">
-                    <a class="links__link" href="">Youtube</a>
+                    <a class="links__link" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener">Youtube</a>
                   </li>
                 </ul>
               </div>
@@ -109,7 +113,7 @@
         </div>
       </section>
       <!-- about -->
-      <section class="section about">
+      <section id="about" class="section about">
         <div class="container about__container">
           <ul class="about__list">
             <li class="about__item">
@@ -160,7 +164,7 @@
         </div>
       </section>
       <!-- price -->
-      <section class="section price">
+      <section id="price" class="section price">
         <div class="container">
           <p class="uppertitle uppertitle--grey">
             Проведи время в компании лучших мастеров
@@ -244,7 +248,7 @@
         </div>
       </section>
       <!-- masters -->
-      <section class="section masters">
+      <section id="masters" class="section masters">
         <div class="container masters__container">
           <p class="uppertitle">для настоящих ценителей атмосферы</p>
           <h2 class="title masters__title">Наши мастера</h2>
@@ -563,7 +567,7 @@
           </div>
         </section>
         <!-- contacts -->
-        <section class="section contacts">
+        <section id="contacts" class="section contacts">
           <div class="container contacts__container">
             <h2 class="title contacts__title title--ligth">Контакты</h2>
             <div class="contacts-wrapper">
