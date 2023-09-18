@@ -113,12 +113,6 @@
             margin-right: 24px;
         }
     }
-
-    @media screen and (min-width: $desktop) {
-        &--margin:not(:last-child) {
-            margin-right: 40px;
-        }
-    }
 }
 
 .menu__link {
